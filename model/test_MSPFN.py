@@ -17,7 +17,7 @@ is_training = tf.placeholder(tf.bool, [])
 
 img_path = './test_data/TEST100/inputcrop/'
 file = os.listdir(img_path)
-save_path = '/test_data/MSPFN/'
+save_path = './test_data/MSPFN/'
 
 if not os.path.exists(save_path):
     os.mkdir(save_path)
