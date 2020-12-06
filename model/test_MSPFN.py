@@ -43,7 +43,7 @@ for f in file:
         sess = tf.Session()
         sess.run(init)
         saver = tf.train.Saver()
-        saver.restore(sess, '/MSPFN/epoch50')#93
+        saver.restore(sess, './MSPFN.py')#93
         vars_all=tf.trainable_variables()
         print ('Params:',np.sum([np.prod(v.get_shape().as_list()) for v in vars_all]))
         st_time=time.time()
@@ -72,7 +72,7 @@ for f in file:
             sess = tf.Session()
             sess.run(init)
             saver = tf.train.Saver()
-            saver.restore(sess, '/MSPFN/epoch50')#93
+            saver.restore(sess, './MSPFN.py')#93
             st_time=time.time()
             fake = sess.run(
                 [model.imitation],
