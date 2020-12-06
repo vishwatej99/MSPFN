@@ -15,7 +15,7 @@ os.environ["CUDA_DEVICE_ORDER"] = "PCI_BUS_ID"
 os.environ["CUDA_VISIBLE_DEVICES"] = "0"
 is_training = tf.placeholder(tf.bool, [])
 
-img_path = 'model/test_data/TEST100/inputcrop/'
+img_path = '/test_data/TEST100/inputcrop'
 file = os.listdir(img_path)
 save_path = '/test_data/MSPFN/'
 
